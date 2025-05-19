@@ -11,7 +11,7 @@
       
       <style>
       @import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css);
-code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}@font-face{font-family:"Material Icons";font-style:normal;font-weight:400;src:local("Material Icons"),local("MaterialIcons-Regular"),url("data:application/x-font-woff;charset=utf-8;base64,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") format("woff")}.admonition{box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);position:relative;margin:1.5625em 0;padding:0 1.2rem;border-left:.4rem solid rgba(68,138,255,.8);border-radius:.2rem;background-color:rgba(255,255,255,.05);overflow:auto}.admonition>p{margin-top:.8rem}.admonition>.admonition-title{margin:0 -1.2rem;padding:.8rem 1.2rem .8rem 3.6rem;border-bottom:1px solid rgba(68,138,255,.2);background-color:rgba(68,138,255,.1);font-weight:700}.admonition>.admonition-title:before{position:absolute;left:1.2rem;font-size:1.5rem;color:rgba(68,138,255,.8);content:"\E3C9"}.admonition>.admonition-title:before{font-family:Material Icons;font-style:normal;font-variant:normal;font-weight:400;line-height:2rem;text-transform:none;white-space:nowrap;speak:none;word-wrap:normal;direction:ltr}.admonition.abstract,.admonition.summary,.admonition.tldr{border-left-color:rgba(0,176,255,.8)}.admonition.abstract>.admonition-title,.admonition.summary>.admonition-title,.admonition.tldr>.admonition-title{background-color:rgba(0,176,255,.1);border-bottom-color:rgba(0,176,255,.2)}.admonition.abstract>.admonition-title:before,.admonition.summary>.admonition-title:before,.admonition.tldr>.admonition-title:before{color:#00b0ff;content:"\E8D2"}.admonition.hint,.admonition.tip{border-left-color:rgba(0,191,165,.8)}.admonition.hint>.admonition-title,.admonition.tip>.admonition-title{background-color:rgba(0,191,165,.1);border-bottom-color:rgba(0,191,165,.2)}.admonition.hint>.admonition-title:before,.admonition.tip>.admonition-title:before{color:#00bfa5;content:"\E80E"}.admonition.info,.admonition.todo{border-left-color:rgba(0,184,212,.8)}.admonition.info>.admonition-title,.admonition.todo>.admonition-title{background-color:rgba(0,184,212,.1);border-bottom-color:rgba(0,184,212,.2)}.admonition.info>.admonition-title:before,.admonition.todo>.admonition-title:before{color:#00b8d4;content:"\E88E"}.admonition.check,.admonition.done,.admonition.success{border-left-color:rgba(0,200,83,.8)}.admonition.check>.admonition-title,.admonition.done>.admonition-title,.admonition.success>.admonition-title{background-color:rgba(0,200,83,.1);border-bottom-color:rgba(0,200,83,.2)}.admonition.check>.admonition-title:before,.admonition.done>.admonition-title:before,.admonition.success>.admonition-title:before{color:#00c853;content:"\E876"}.admonition.faq,.admonition.help,.admonition.question{border-left-color:rgba(100,221,23,.8)}.admonition.faq>.admonition-title,.admonition.help>.admonition-title,.admonition.question>.admonition-title{background-color:rgba(100,221,23,.1);border-bottom-color:rgba(100,221,23,.2)}.admonition.faq>.admonition-title:before,.admonition.help>.admonition-title:before,.admonition.question>.admonition-title:before{color:#64dd17;content:"\E887"}.admonition.attention,.admonition.caution,.admonition.warning{border-left-color:rgba(255,145,0,.8)}.admonition.attention>.admonition-title,.admonition.caution>.admonition-title,.admonition.warning>.admonition-title{background-color:rgba(255,145,0,.1);border-bottom-color:rgba(255,145,0,.2)}.admonition.attention>.admonition-title:before{color:#ff9100;content:"\E417"}.admonition.caution>.admonition-title:before,.admonition.warning>.admonition-title:before{color:#ff9100;content:"\E002"}.admonition.fail,.admonition.failure,.admonition.missing{border-left-color:rgba(255,82,82,.8)}.admonition.fail>.admonition-title,.admonition.failure>.admonition-title,.admonition.missing>.admonition-title{background-color:rgba(255,82,82,.1);border-bottom-color:rgba(255,82,82,.2)}.admonition.fail>.admonition-title:before,.admonition.failure>.admonition-title:before,.admonition.missing>.admonition-title:before{color:#ff5252;content:"\E14C"}.admonition.bug,.admonition.danger,.admonition.error{border-left-color:rgba(255,23,68,.8)}.admonition.bug>.admonition-title,.admonition.danger>.admonition-title,.admonition.error>.admonition-title{background-color:rgba(255,23,68,.1);border-bottom-color:rgba(255,23,68,.2)}.admonition.danger>.admonition-title:before{color:#ff1744;content:"\E3E7"}.admonition.error>.admonition-title:before{color:#ff1744;content:"\E14C"}.admonition.bug>.admonition-title:before{color:#ff1744;content:"\E868"}.admonition.example,.admonition.snippet{border-left-color:rgba(0,184,212,.8)}.admonition.example>.admonition-title,.admonition.snippet>.admonition-title{background-color:rgba(0,184,212,.1);border-bottom-color:rgba(0,184,212,.2)}.admonition.example>.admonition-title:before,.admonition.snippet>.admonition-title:before{color:#00b8d4;content:"\E242"}.admonition.cite,.admonition.quote{border-left-color:rgba(158,158,158,.8)}.admonition.cite>.admonition-title,.admonition.quote>.admonition-title{background-color:rgba(158,158,158,.1);border-bottom-color:rgba(158,158,158,.2)}.admonition.cite>.admonition-title:before,.admonition.quote>.admonition-title:before{color:#9e9e9e;content:"\E244"}
 /* Please visit the URL below for more information: */
 /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
 /* Please visit the URL below for more information: */
@@ -206,43 +206,53 @@ code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-fami
             <p>Características principales del modelo lineal</p>
 
           </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#alta-dependencia-de-recursos-naturales" class="md-toc-link">
-            <p>Alta dependencia de recursos naturales</p>
-
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#producción-intensiva" class="md-toc-link">
-            <p>Producción intensiva</p>
-
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#obsolescencia-programada-y-percibida" class="md-toc-link">
-            <p>Obsolescencia programada y percibida</p>
-
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#consumo-acelerado" class="md-toc-link">
-            <p>Consumo acelerado</p>
-
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#generación-masiva-de-residuos" class="md-toc-link">
-            <p>Generación masiva de residuos</p>
-
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#escasa-reutilización-y-reciclaje" class="md-toc-link">
-            <p>Escasa reutilización y reciclaje</p>
-
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#impacto-ambiental-elevado" class="md-toc-link">
-            <p>Impacto ambiental elevado</p>
-
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
           <a href="#por-qué-es-importante-entender-este-modelo" class="md-toc-link">
             <p>¿Por qué es importante entender este modelo?</p>
 
           </a></div>
         </div>
       </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#economía-verde" class="md-toc-link"><p>Economía verde</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#principios-clave-de-la-economía-verde" class="md-toc-link">
+            <p>Principios clave de la economía verde</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#economía-circular" class="md-toc-link"><p>Economía circular</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#principios-clave-de-la-economía-circular" class="md-toc-link">
+            <p>Principios clave de la economía circular</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#economía-verde-y-circular" class="md-toc-link">
+            <p>Economía verde y circular</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#de-las-3r-a-las-9r-una-evolución-del-modelo" class="md-toc-link">
+            <p>De las 3R a las 9R: una evolución del modelo</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ejemplos-de-economía-circular-en-el-sector-tic" class="md-toc-link">
+            <p>Ejemplos de economía circular en el sector TIC</p>
+
+          </a></div>
+        </div>
+      </details>
     <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
-          <a href="#ceb-se-han-identificado-los-principios-de-la-economía-verde-y-circular" class="md-toc-link">
-            <p>CEb. Se han identificado los principios de la economía verde y circular.</p>
+          <a href="#economía-lineal-vs-economía-circular" class="md-toc-link">
+            <p>Economía lineal vs economía circular</p>
 
           </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
           <a href="#cec-se-han-contrastado-los-beneficios-de-la-economía-verde-y-circular-frente-al-modelo-clásico-de-producción" class="md-toc-link">
@@ -333,28 +343,293 @@ code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-fami
 </div><p>En este modelo los recursos se <strong>producen</strong>, se <strong>consumen</strong> y luego se desechan como <strong>residuos</strong>, sin considerar su <strong>reutilización</strong> o <strong>reciclaje</strong>, generando un alto <strong>impacto ambiental</strong> y <strong>desperdicio de materiales</strong>.</p>
 <p>El <strong>modelo lineal</strong> ha permitido un <strong>crecimiento económico global</strong>, impulsando la <strong>industrialización</strong>, el <strong>comercio</strong> y el <strong>acceso masivo a bienes de consumo</strong>. Sin embargo, también ha contribuido a la <strong>sobreexplotación de recursos</strong>, el <strong>aumento de residuos</strong> (especialmente electrónicos y plásticos), y la intensificación de problemas ambientales como el <strong>cambio climático</strong>, la <strong>contaminación</strong> y la <strong>pérdida de biodiversidad</strong>.</p>
 <h3 id="características-principales-del-modelo-lineal">Características principales del modelo lineal </h3>
-<h3 id="alta-dependencia-de-recursos-naturales">Alta dependencia de recursos naturales </h3>
+<h4 id="alta-dependencia-de-recursos-naturales">Alta dependencia de recursos naturales </h4>
 <p>Requiere grandes cantidades de materias primas (minerales, energía fósil, agua), muchas de ellas limitadas o no renovables.</p>
-<h3 id="producción-intensiva">Producción intensiva </h3>
+<h4 id="producción-intensiva">Producción intensiva </h4>
 <p>Se prioriza la cantidad, la rapidez y el bajo coste frente a la durabilidad o el impacto ambiental de los productos.</p>
-<h3 id="obsolescencia-programada-y-percibida">Obsolescencia programada y percibida </h3>
+<h4 id="obsolescencia-programada-y-percibida">Obsolescencia programada y percibida </h4>
 <p>Muchos productos están diseñados para tener una vida útil limitada o para parecer anticuados rápidamente, especialmente en el sector tecnológico.</p>
-<h3 id="consumo-acelerado">Consumo acelerado </h3>
+<h4 id="consumo-acelerado">Consumo acelerado </h4>
 <p>El sistema impulsa el consumo constante (nuevas versiones de móviles, ordenadores, electrodomésticos...), muchas veces innecesario.</p>
-<h3 id="generación-masiva-de-residuos">Generación masiva de residuos </h3>
+<h4 id="generación-masiva-de-residuos">Generación masiva de residuos </h4>
 <p>Se generan toneladas de residuos sólidos, entre ellos gran cantidad de residuos electrónicos (RAEE), que a menudo no se reciclan adecuadamente.</p>
-<h3 id="escasa-reutilización-y-reciclaje">Escasa reutilización y reciclaje </h3>
+<h4 id="escasa-reutilización-y-reciclaje">Escasa reutilización y reciclaje </h4>
 <p>Los productos rara vez están diseñados para facilitar su reparación o reutilización. Muchos materiales valiosos se pierden al no reciclarse.</p>
-<h3 id="impacto-ambiental-elevado">Impacto ambiental elevado </h3>
+<h4 id="impacto-ambiental-elevado">Impacto ambiental elevado </h4>
 <p>Este modelo contribuye a problemas graves como el cambio climático, la contaminación y la pérdida de biodiversidad.</p>
 <h3 id="por-qué-es-importante-entender-este-modelo">¿Por qué es importante entender este modelo? </h3>
 <p>Comprender cómo funciona (Producir ➜ Consumir ➜ Residuo) nos ayuda a detectar sus <strong>debilidades</strong> y a plantear <strong>alternativas más sostenibles</strong>, como la economía circular y el ecodiseño.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Un portátil usado por una empresa durante solo 2 años puede terminar como residuo electrónico si no se reutiliza o recicla correctamente. En cambio, si se recondiciona y revende, se alarga su ciclo de vida y se reduce su huella ecológica.</p>
+</div>
+<h2 id="economía-verde">Economía verde </h2>
+<p>La <strong>economía verde</strong> es un modelo de desarrollo económico que busca mejorar el <strong>bienestar humano</strong> y la <strong>equidad social</strong>, al tiempo que reduce significativamente los <strong>riesgos ambientales</strong> y la <strong>escasez ecológica</strong>. Está enfocada en la transición ecológica de los sectores productivos, incluyendo el sector TIC.</p>
+<h3 id="principios-clave-de-la-economía-verde">Principios clave de la economía verde </h3>
+<h4 id="eficiencia-en-el-uso-de-los-recursos">Eficiencia en el uso de los recursos </h4>
+<p>Utilizar materias primas y energía de forma optimizada para minimizar el desperdicio y maximizar la productividad.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Uso de algoritmos de bajo consumo energético o hardware eficiente que prolonga la vida útil de los equipos.</p>
+</div>
+<h4 id="reducción-de-emisiones-y-residuos">Reducción de emisiones y residuos </h4>
+<p>Disminuir la contaminación ambiental mediante procesos más limpios y una mejor gestión de los desechos.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Gestión responsable de RAEE (residuos de aparatos eléctricos y electrónicos) mediante reciclaje o reacondicionamiento.</p>
+</div>
+<h4 id="fomento-de-energías-renovables">Fomento de energías renovables </h4>
+<p>Sustituir fuentes de energía fósil por alternativas sostenibles como la solar, eólica o biomasa.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Los centros de datos, que consumen muchísima electricidad para funcionar y refrigerarse, pueden alimentarse con energía solar o eólica para reducir su huella de carbono.</p>
+</div>
+<h4 id="inversión-en-tecnologías-limpias">Inversión en tecnologías limpias </h4>
+<p>Apostar por soluciones tecnológicas que reduzcan el impacto ambiental durante todo el ciclo de vida del producto.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Equipos certificados con etiquetas ecológicas (como Energy Star) o diseño modular para facilitar su reparación y actualización.</p>
+</div>
+<h4 id="generación-de-empleo-verde">Generación de empleo verde </h4>
+<p>Crear puestos de trabajo vinculados a actividades sostenibles como la eficiencia energética, el reciclaje o las energías renovables.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Técnicos dedicados al reacondicionamiento de equipos informáticos o al desarrollo de software para la gestión energética.</p>
+</div>
+<h2 id="economía-circular">Economía circular </h2>
+<p>La <strong>economía circular</strong> es un modelo que busca <strong>cerrar los ciclos de vida</strong> de los productos, materiales y recursos, evitando que se conviertan en residuos.</p>
+<p>Se basa en el principio de las <strong>3R</strong>:</p>
+<div kroki="true" class="dot"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 9.0.0 (20230911.1827)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="404pt" height="67pt" viewBox="0.00 0.00 404.08 67.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 63)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-63 400.08,-63 400.08,4 -4,4"></polygon>
+<!-- Reducir -->
+<g id="node1" class="node">
+<title>Reducir</title>
+<ellipse fill="none" stroke="black" cx="50.16" cy="-18" rx="50.16" ry="18"></ellipse>
+<text text-anchor="middle" x="50.16" y="-13.32" font-family="Times,serif" font-size="14.00">Reducir</text>
+</g>
+<!-- Reutilizar -->
+<g id="node2" class="node">
+<title>Reutilizar</title>
+<ellipse fill="none" stroke="black" cx="196.46" cy="-41" rx="60.15" ry="18"></ellipse>
+<text text-anchor="middle" x="196.46" y="-36.33" font-family="Times,serif" font-size="14.00">Reutilizar</text>
+</g>
+<!-- Reducir&#45;&gt;Reutilizar -->
+<g id="edge1" class="edge">
+<title>Reducir-&gt;Reutilizar</title>
+<path fill="none" stroke="black" d="M96.42,-25.21C107.51,-26.98 119.58,-28.91 131.37,-30.78"></path>
+<polygon fill="black" stroke="black" points="130.62,-34.21 141.04,-32.33 131.72,-27.3 130.62,-34.21"></polygon>
+</g>
+<!-- Reciclar -->
+<g id="node3" class="node">
+<title>Reciclar</title>
+<ellipse fill="none" stroke="black" cx="344.35" cy="-18" rx="51.73" ry="18"></ellipse>
+<text text-anchor="middle" x="344.35" y="-13.32" font-family="Times,serif" font-size="14.00">Reciclar</text>
+</g>
+<!-- Reutilizar&#45;&gt;Reciclar -->
+<g id="edge2" class="edge">
+<title>Reutilizar-&gt;Reciclar</title>
+<path fill="none" stroke="black" d="M250.54,-32.63C261.91,-30.84 273.97,-28.94 285.51,-27.12"></path>
+<polygon fill="black" stroke="black" points="285.99,-30.59 295.32,-25.57 284.9,-23.67 285.99,-30.59"></polygon>
+</g>
+<!-- Reciclar&#45;&gt;Reducir -->
+<g id="edge3" class="edge">
+<title>Reciclar-&gt;Reducir</title>
+<path fill="none" stroke="black" d="M292.91,-15.28C281.01,-14.75 268.37,-14.27 256.62,-14 203.16,-12.77 189.77,-12.75 136.31,-14 128.28,-14.19 119.82,-14.48 111.48,-14.81"></path>
+<polygon fill="black" stroke="black" points="111.58,-11.31 101.74,-15.24 111.88,-18.3 111.58,-11.31"></polygon>
+</g>
+</g>
+</svg>
+</div><h3 id="principios-clave-de-la-economía-circular">Principios clave de la economía circular </h3>
+<h4 id="diseño-para-la-durabilidad-reparabilidad-y-reciclabilidad">Diseño para la durabilidad, reparabilidad y reciclabilidad </h4>
+<p>Crear productos que duren más, sean fáciles de reparar y permitan separar materiales para su reciclaje.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Ordenadores con carcasa desmontable, piezas intercambiables y manuales de reparación disponibles.</p>
+</div>
+<h4 id="mantenimiento-y-reparación-de-equipos">Mantenimiento y reparación de equipos </h4>
+<p>Promover el cuidado y reparación de dispositivos para prolongar su vida útil.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Talleres que arreglan portátiles, móviles o impresoras en lugar de desecharlos.</p>
+</div>
+<h4 id="reutilización-de-componentes-o-dispositivos-completos">Reutilización de componentes o dispositivos completos </h4>
+<p>Volver a usar equipos o partes funcionales en lugar de desecharlos.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Recuperación de discos duros, fuentes de alimentación o memorias RAM para ser instalados en otros equipos.</p>
+</div>
+<h4 id="reciclaje-de-materiales-valiosos">Reciclaje de materiales valiosos </h4>
+<p>Extraer y procesar materias primas contenidas en residuos para darles una segunda vida.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Recuperación de oro, plata, cobre y tierras raras de placas base o móviles.</p>
+</div>
+<h4 id="economía-de-servicios">Economía de servicios </h4>
+<p>Sustituir la venta de productos físicos por servicios que cubren la misma necesidad.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Uso de software en la nube (SaaS) o alquiler de impresoras con mantenimiento incluido.</p>
+</div>
+<h3 id="economía-verde-y-circular">Economía verde y circular </h3>
+<p>Observarás que aunque economía verde y economía circular tienen enfoques diferentes (la primera es más amplia y centrada en el impacto ambiental global, la segunda en los flujos de materiales y recursos), hay principios clave que se superponen.Esto demuestra que ambos modelos son complementarios y pueden integrarse en estrategias comunes para una transición sostenible.</p>
+<h3 id="de-las-3r-a-las-9r-una-evolución-del-modelo">De las 3R a las 9R: una evolución del modelo </h3>
+<div class="row">
+<div class="col-sm-6 my-auto">
+<p>Tradicionalmente, la <strong>economía circular</strong> se ha asociado al principio de las <strong>3R</strong>:  <strong>Reducir ➝ Reutilizar ➝ Reciclar</strong>, un esquema básico que propone reducir el uso de recursos, reutilizar productos y reciclar materiales para evitar que terminen como residuos. Sin embargo, ante la creciente complejidad de los sistemas de producción y consumo, se ha desarrollado un modelo más completo y estratégico: las <strong>9R</strong>.</p>
+</div>
+<div class="col-sm-6 my-auto">
+<p><img src="./assets/imgs/9r.jpeg" alt="nombre" style="display:block;margin:0 auto;width:75%;max-width:400px;"></p>
+</div>
+</div>
+<h4 id="las-9r">Las 9R </h4>
+<p>Las <strong>9R</strong> representan una <em>jerarquía de estrategias circulares</em>, desde la más prioritaria (evitar el residuo) hasta la menos deseable (valorizarlo energéticamente).</p>
+<h5 id="1-rechazar">1. Rechazar </h5>
+<p>Evitar el consumo de productos innecesarios o insostenibles.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>No adquirir dispositivos de baja calidad o de un solo uso.</p>
+</div>
+<h5 id="2-reducir">2. Reducir </h5>
+<p>Minimizar el uso de materias primas y energía en todo el ciclo de vida.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Software ligero que requiere menos recursos de hardware.</p>
+</div>
+<h5 id="3-reutilizar">3. Reutilizar </h5>
+<p>Dar una segunda vida a los productos  o componentes .</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Reutilizar monitores o teclados en distintos puestos de trabajo.</p>
+</div>
+<h5 id="4-reparar">4. Reparar </h5>
+<p>Arreglar productos estropeados para prolongar su vida útil</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Sustituir la batería de un portátil en lugar de cambiar el equipo entero.</p>
+</div>
+<h5 id="5-restaurar">5. Restaurar </h5>
+<p>Restaurar productos para que funcionen como nuevos.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Equipos reacondicionados certificados para su reventa.</p>
+</div>
+<h5 id="6-rediseñar">6. Rediseñar </h5>
+<p>Concebir productos desde el inicio para que sean sostenibles.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Diseñar portátiles modulares, con piezas fácilmente reemplazables.</p>
+</div>
+<h5 id="7-reciclar">7. Reciclar </h5>
+<p>Transformar materiales residuales en nuevas materias primas.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Recuperar oro, cobre o aluminio de teléfonos móviles antiguos.</p>
+</div>
+<h5 id="8-recuperar">8. Recuperar </h5>
+<p>Obtener energía de los residuos que no pueden ser reutilizados ni reciclados.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Incinerar residuos electrónicos no reciclables en plantas de valorización energética.</p>
+</div>
+<h5 id="9-reintegrar">9. Reintegrar </h5>
+<p>Aprovechar residuos para nuevos usos en otras industrias.</p>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Usar plásticos reciclados de carcasas de ordenadores para fabricar mobiliario o nuevos dispositivos.</p>
+</div>
 <blockquote>
-<p><strong>Ejemplo</strong>:<br>
-Un portátil usado por una empresa durante solo 2 años puede terminar como residuo electrónico si no se reutiliza o recicla correctamente. En cambio, si se recondiciona y revende, se alarga su ciclo de vida y se reduce su huella ecológica.</p>
+<p>✋ <strong>Importante:</strong><br>
+Las 9R no sustituyen a las 3R, sino que las amplían. Son una evolución del modelo que nos permite actuar de forma más profunda y estratégica, especialmente en sectores como el tecnológico.</p>
 </blockquote>
-<h2 id="ceb-se-han-identificado-los-principios-de-la-economía-verde-y-circular">CEb. Se han identificado los principios de la economía verde y circular. </h2>
-<p>lalala</p>
+<h3 id="ejemplos-de-economía-circular-en-el-sector-tic">Ejemplos de economía circular en el sector TIC </h3>
+<p>Podemos encontrar variados ejemplos que ilustran la  aplicación de la economía circular en el sector tecnológico:</p>
+<h4 id="closing-the-loophttpswwwclosingtheloopeu"><a href="https://www.closingtheloop.eu/">Closing the Loop</a> </h4>
+<p>Recupera móviles usados en África para extraer metales valiosos y reintroducirlos en el mercado.</p>
+<h4 id="fairphonehttpswwwfairphonecom"><a href="https://www.fairphone.com/">Fairphone</a> </h4>
+<p>Diseña smartphones modulares, fácilmente reparables y con materiales sostenibles.</p>
+<h4 id="cewastehttpscewasteeu"><a href="https://cewaste.eu/">CEWASTE</a> </h4>
+<p>Impulsa la recuperación de metales críticos en residuos electrónicos.</p>
+<h2 id="economía-lineal-vs-economía-circular">Economía lineal vs economía circular </h2>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th>Modelo Lineal</th>
+<th>Economía Circular</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Uso de recursos</strong></td>
+<td>Intensivo y extractivo</td>
+<td>Eficiente y regenerativo</td>
+</tr>
+<tr>
+<td><strong>Generación de residuos</strong></td>
+<td>Alta, sin valorización</td>
+<td>Mínima, con recuperación y reciclaje</td>
+</tr>
+<tr>
+<td><strong>Impacto ambiental</strong></td>
+<td>Elevado (contaminación, cambio climático)</td>
+<td>Reducido (cierre de ciclos, menor huella ecológica)</td>
+</tr>
+<tr>
+<td><strong>Sostenibilidad económica</strong></td>
+<td>Dependencia de materias finitas</td>
+<td>Resiliencia mediante modelos innovadores</td>
+</tr>
+<tr>
+<td><strong>Impacto social</strong></td>
+<td>Desigual, con empleo precario</td>
+<td>Inclusivo, con generación de empleo verde</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Modelo Lineal</th>
+<th>Economía Circular</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uso de recursos</td>
+<td>Intensivo</td>
+<td>Eficiente</td>
+</tr>
+<tr>
+<td>Fin de vida del producto</td>
+<td>Desecho</td>
+<td>Reintroducción al ciclo productivo</td>
+</tr>
+<tr>
+<td>Diseño de productos</td>
+<td>Corto plazo, obsolescencia</td>
+<td>Larga vida, reparabilidad</td>
+</tr>
+<tr>
+<td>Impacto ambiental</td>
+<td>Alto</td>
+<td>Bajo</td>
+</tr>
+<tr>
+<td>Enfoque económico</td>
+<td>Producción y consumo</td>
+<td>Valor sostenible y prolongado</td>
+</tr>
+</tbody>
+</table>
+<hr>
 <h2 id="cec-se-han-contrastado-los-beneficios-de-la-economía-verde-y-circular-frente-al-modelo-clásico-de-producción">CEc. Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción. </h2>
 <p>lalala</p>
 <h2 id="ced-se-han-aplicado-principios-de-ecodiseño">CEd. Se han aplicado principios de ecodiseño. </h2>
