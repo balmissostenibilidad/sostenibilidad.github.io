@@ -1,0 +1,757 @@
+<!DOCTYPE html><html><head>
+      <title>Actividades Digitalización Unidad 3</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      @import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css);
+code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/catamaran/v27/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjd5a7dvg.ttf) format('truetype');
+}
+.markdown-preview.markdown-preview .box_bg_lightgrey {
+  background-color: #f5f5f5;
+  border: 2px solid #969696;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 0 rgba(78, 120, 158, 0.1);
+}
+.markdown-preview.markdown-preview .box_bg_lightgreen {
+  background-color: #f5faf5;
+  border: 2px solid #969b96;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 0 rgba(78, 120, 158, 0.1);
+}
+.markdown-preview.markdown-preview .contenedor {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 30px auto;
+}
+.markdown-preview.markdown-preview .fondo {
+  background: url(https://balmisdigigs.github.io/digitalizacion.github.io/imagenes/fondos/quote.png);
+  background-size: cover;
+  width: 75%;
+  height: 160px;
+  border-radius: 10px;
+  position: relative;
+}
+.markdown-preview.markdown-preview .cita {
+  font-family: Arial;
+  font-style: italic;
+  font-weight: 600;
+  text-align: justify;
+  line-height: 1.5rem;
+  opacity: 0.6;
+  color: white;
+  padding: 5rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-size: 1.3rem;
+  transform: translate(-50%, -50%);
+}
+.markdown-preview.markdown-preview .abre_comilla {
+  font-family: "Catamaran";
+  font-weight: 600;
+  color: white;
+  padding-left: 30px;
+  position: absolute;
+  font-size: 6rem;
+  transform: translate(0%, -15%);
+}
+.markdown-preview.markdown-preview .cierra_comilla {
+  font-family: "Catamaran";
+  font-weight: 600;
+  color: white;
+  padding-right: 30px;
+  right: 0%;
+  position: absolute;
+  font-size: 6rem;
+  transform: translate(0%, 55%);
+}
+.markdown-preview.markdown-preview .autor {
+  font-family: Arial;
+  color: white;
+  margin: 0px;
+  padding-left: 30px;
+  position: absolute;
+  top: 83%;
+  font-size: 1rem;
+}
+.markdown-preview.markdown-preview .flotante {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .flotante {
+    justify-content: center;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .flotante {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .flotante {
+    flex-direction: column;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .flotante {
+    flex-direction: row;
+  }
+}
+.markdown-preview.markdown-preview .flotante_izq {
+  margin-right: 15px;
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .flotante_izq {
+    width: 100%;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .flotante_izq {
+    width: auto;
+  }
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .flotante_der {
+    width: 100%;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .flotante_der {
+    width: auto;
+  }
+}
+.markdown-preview.markdown-preview .galeria_imagenes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .galeria_imagenes {
+    flex-direction: column;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .galeria_imagenes {
+    flex-direction: row;
+  }
+}
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+    const configureMermaidIconPacks = () => {
+        window["mermaid"].registerIconPacks([
+            {
+                name: "logos",
+                loader: () =>
+                    fetch("https://unpkg.com/@iconify-json/logos@1/icons.json").then(
+                        (res) => res.json()
+                    ),
+            },
+        ]);
+    };
+
+    if (document.readyState !== 'loading') {
+        configureMermaidIconPacks();
+    } else {
+        document.addEventListener("DOMContentLoaded", () => {
+            configureMermaidIconPacks();
+        });
+    }
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<style type="text/css">
+.style-normal {
+    text-indent: 0.5cm;
+    text-align: justify;
+}
+.style-example {
+    text-indent: 0cm;
+    text-align: justify;
+}
+.style-title {
+    text-indent: 0cm;
+    text-align: center;
+}
+table {
+    table-layout: auto !important;
+    width: fit-content !important;
+    max-width: none !important;
+    border-collapse: collapse;
+}
+</style>
+<p><img src="./../assets/img-BalmisHeader.png" alt="ONU"></p>
+<div class="style-title">
+<h1 id="actividades-unidad-3---sostenibilidad-en-el-desempeño-profesional-y-personal">Actividades Unidad 3 - Sostenibilidad en el desempeño profesional y personal </h1>
+</div>
+<p>📙<a href="./u3.guia.pdf">Descargar PDF</a></p>
+<h2 id="índice">Índice </h2>
+<div style="background-color: Lightgrey;">
+
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#ra-y-ce" class="md-toc-link"><p>RA y CE</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#relación-con-los-criterios-de-evaluación" class="md-toc-link">
+            <p>Relación con los criterios de evaluación</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+</div>
+</div>
+<div style="page-break-after:always;"></div>
+<div class="ejercicio">
+<h3 id="white_check_mark-exploración-de-los-ods">✅ Exploración de los ODS </h3>
+<p><strong>Objetivo:</strong> Reflexionar sobre los Objetivos de Desarrollo Sostenible (ODS) y su relevancia en el ámbito profesional de la Informática.</p>
+<p><strong>Tipo de ejercicio</strong>: Individual</p>
+<p><strong>Antes de comenzar:</strong><br>
+Consulta los siguientes recursos para comprender el contexto actual de los ODS y su relación con la sostenibilidad:</p>
+<ul>
+<li><a href="https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/">Página oficial de los ODS</a> para obtener información detallada.</li>
+<li><a href="https://www.ods2023.es/">ODS en España</a> para ver cómo se están implementando en el país.</li>
+<li>Apuntes de clase sobre los ODS y los desafíos ambientales y sociales.</li>
+</ul>
+<p><strong>Tarea</strong>:<br>
+Analiza los 17 ODS y selecciona los <strong>tres</strong> que consideres más importantes para tu futura profesión en el campo profesional de la Informática.</p>
+<p>Analiza los indicadores de cada uno de los tres ODS que hayas seleccionado en el apartado anterior y reflexiona sobre cómo tu trabajo puede contribuir a su consecución.</p>
+<p><strong>¿Qué debes hacer?</strong><br>
+Crea un esquema o infografía que incluya:</p>
+<ol>
+<li><strong>Nombre de los ODS</strong>: Elige tres de los 17 ODS.</li>
+<li><strong>Descripción breve</strong>: Explica en una o dos frases por qué es importante cada ODS.</li>
+<li><strong>Indicadores clave</strong>: Selecciona al menos dos indicadores de cada ODS que consideres relevantes.</li>
+<li><strong>Ejemplos de contribución</strong>: Explica cómo tu trabajo en Informática puede ayudar a alcanzar cada uno de los indicadores. Puedes incluir ejemplos concretos o ideas innovadoras.</li>
+<li>No olvides incluir las referencias a las fuentes consultadas, imágenes o iconos que utilices para ilustrar tu esquema.</li>
+</ol>
+<p>Recuerda que puedes usar herramientas como <code>Canva</code>, <code>PowerPoint</code> o cualquier editor de imágenes para crear tu infografía.</p>
+<p><em>Entrega:</em> Sube el esquema o infografía a la actividad de AULES. También puedes subir un enlace al recurso creado. No olvides compartirlo con el profesorado del módulo o hacerlo público para que podamos revisarlo..</p>
+</div> <!-- fin ejercicio -->
+<div style="page-break-after:always;"></div>
+<div class="ejercicio">
+<h3 id="white_check_mark-cómo-afectan-los-criterios-asg-a-las-empresas-tecnológicas">✅ ¿Cómo afectan los criterios ASG a las empresas tecnológicas? </h3>
+<p><strong>Objetivo:</strong> Reflexionar de forma crítica y creativa sobre la aplicación de los criterios ASG  en el entorno real de una empresa tecnológica.</p>
+<p><strong>¿Qué tienes que hacer?</strong></p>
+<ol>
+<li>
+<p><em>Elige una empresa tecnológica real.</em><br>
+Puede ser española o internacional, pero debe tener presencia clara en el ámbito de la informática o las telecomunicaciones (por ejemplo, Telefónica, Google, Microsoft, Indra, HP, etc.). Busca algo de información básica sobre su actividad y, si es posible, sobre su enfoque en sostenibilidad.</p>
+</li>
+<li>
+<p><em>Entrevista creativa</em><br>
+Imagina que tú eres el <strong>nuevo director o directora de sostenibilidad</strong> de esa empresa. Vas a redactar un texto en <strong>formato de entrevista ficticia</strong> (como si te la hiciera un periodista o un medio especializado), respondiendo desde tu papel como experto/a en sostenibilidad.<br>
+No se trata de copiar datos reales, sino de aplicar los conocimientos del tema y mostrar cómo aplicarías tú los criterios ASG si estuvieras al frente de esa empresa.</p>
+<p>Preguntas orientadoras que debes incluir:</p>
+<ul>
+<li>¿Qué harías tú si fueras su responsable de sostenibilidad?<br>
+Explica las acciones concretas que implementarías para mejorar el compromiso ASG de la empresa.</li>
+<li>¿Cómo afectaría aplicar criterios ASG a su forma de trabajar?<br>
+Reflexiona sobre qué cambios se producirían en el día a día de la empresa: ¿cómo se modificaría la toma de decisiones? ¿Cambiarían los procesos, los productos, la relación con proveedores o trabajadores?<br>
+¿Qué consecuencias tendría ignorarlos?<br>
+Expón qué riesgos reales podría enfrentar la empresa si no tiene en cuenta los criterios ASG (desde pérdida de reputación hasta sanciones legales o fuga de talento).</li>
+</ul>
+</li>
+</ol>
+<p><strong>Extensión y entrega</strong></p>
+<ul>
+<li><em>Extensión mínima:</em> 350 palabras.</li>
+<li><em>Formato:</em> Entrevista escrita con al menos 5 preguntas. Puedes añadir preguntas propias.</li>
+<li><em>Entrega:</em> Entrega tu entrevista en un documento de texto en formato pdf en Aules.</li>
+</ul>
+<p><strong>Ejemplo de inicio (solo como guía, no copiar)</strong></p>
+<p><em>Entrevistador</em>: Bienvenida, ¿qué planes tiene como nueva responsable de sostenibilidad en XYZ Technologies?<br>
+<em>Director sostenibilidad (estudiante)</em>: Gracias. Lo primero sería revisar el consumo energético de nuestros centros de datos. En una empresa tecnológica, la eficiencia energética (ODS 7) y la reducción de emisiones son claves. Me centraría también en asegurar la accesibilidad digital de todos nuestros servicios...</p>
+</div> <!-- fin ejercicio -->
+<div style="page-break-after:always;"></div>
+<div class="ejercicio">
+<h3 id="white_check_mark-ods-en-el-sector-productivo-tecnológico">✅ ODS en el sector productivo tecnológico </h3>
+<p><strong>Objetivo:</strong> Identificar cómo las empresas del sector TIC pueden contribuir a los Objetivos de Desarrollo Sostenible mediante acciones reales.</p>
+<p><strong>Tarea:</strong> Diseña una <em>diapositiva o cartel visual</em> sobre la aplicación de uno de los siguientes ODS en el sector tecnológico. Puedes centrarte en:</p>
+<ul>
+<li>ODS 4: Educación de calidad | Ej. plataformas de aprendizaje online, formación digital.</li>
+<li>ODS 5: Igualdad de género | Ej. iniciativas de inclusión en empresas tecnológicas.</li>
+<li>ODS 7: Energía asequible y no contaminante | Ej. eficiencia energética en centros de datos.</li>
+<li>ODS 9: Industria, innovación e infraestructura | Ej. accesibilidad digital, infraestructuras sostenibles.</li>
+<li>ODS 13: Acción por el clima | Ej. reducción de emisiones en servicios digitales.</li>
+<li>ODS 16: Paz, justicia e instituciones sólidas | Ej. privacidad, ciberseguridad, transparencia.</li>
+</ul>
+<p><strong>¿Qué debe incluir tu trabajo?</strong></p>
+<ul>
+<li>
+<p>Un título claro y atractivo.<br>
+Ejemplo: <em>"Google reduce el consumo energético de sus centros de datos"</em></p>
+</li>
+<li>
+<p>Un caso real documentado.<br>
+Puedes usar páginas oficiales, informes ESG o noticias actuales.<br>
+No copies: resume con tus palabras lo más relevante.</p>
+</li>
+<li>
+<p><em>Una frase tuya</em> que resuma por qué es importante el caso desde el punto de vista de la sostenibilidad.<br>
+Ejemplo: <em>"Una nube más verde es posible si se diseña con responsabilidad."</em></p>
+</li>
+<li>
+<p><em>Elementos visuales:</em><br>
+Imágenes, iconos de ODS, gráficos, logos...<br>
+Puedes crearlos tú o elegirlos (de buena calidad y coherentes con el tema).</p>
+</li>
+</ul>
+<p><strong>Consejos prácticos</strong></p>
+<ul>
+<li>Crea el cartel con herramientas como PowerPoint, Canva o similares.</li>
+<li>Puedes insertar imágenes, texto, colores y tipografías que refuercen tu mensaje.</li>
+<li>Sé original: haz que tu cartel se entienda y llame la atención.</li>
+<li>Asegúrate de que tu trabajo transmita un mensaje claro: cómo la tecnología puede ayudar a construir un mundo más sostenible. ¡Hazlo visual, directo y con tu toque personal!</li>
+</ul>
+<p><strong>Formato y entrega</strong></p>
+<ul>
+<li>Formato: 1 diapositiva.</li>
+<li>Entrega: Entrega tu diapositiva en formato pdf en Aules.</li>
+</ul>
+</div> <!-- fin ejercicio -->
+<div style="page-break-after:always;"></div>
+<div class="ejercicio">
+<h3 id="white_check_mark-cómo-contribuirían-los-ods-si-tú-creas-la-empresa">✅ ¿Cómo contribuirían los ODS si tú creas la empresa? </h3>
+<p><strong>Objetivo:</strong><br>
+Aplicar los Objetivos de Desarrollo Sostenible (ODS) al contexto del emprendimiento tecnológico.</p>
+<p><strong>Tarea:</strong><br>
+Imagina que creas una <em>startup tecnológica</em> junto con dos compañeros/as. El reto es diseñar un producto o servicio innovador y sostenible, y demostrar cómo puede contribuir a un mundo mejor.</p>
+<p>Deberéis reflejar vuestra idea en una <strong>infografía o esquema visual</strong>, clara y bien estructurada.</p>
+<p><strong>¿Qué debe incluir tu trabajo?</strong></p>
+<ul>
+<li>
+<p><strong>Nombre de la empresa y descripción breve del producto o servicio que ofrece.</strong><br>
+¿Qué problema resuelve? ¿A quién va dirigido?</p>
+</li>
+<li>
+<p><strong>Tres ODS directamente relacionados con vuestra actividad.</strong><br>
+Justificad cada uno con una frase clara.<br>
+Ejemplo: <em>“Nuestro software educativo gratuito contribuye al ODS 4 porque facilita el acceso a la educación digital.”</em></p>
+</li>
+<li>
+<p><strong>Frase final o eslogan personal.</strong><br>
+Resumid en una sola frase por qué vuestra idea puede ayudar a mejorar el futuro.<br>
+Ejemplo: <em>“La tecnología no cambia el mundo, pero las personas que la crean sí .”</em></p>
+</li>
+<li>
+<p><strong>Elementos visuales:</strong><br>
+Diseñad una infografía con buena presentación. Podéis usar iconos de los ODS, dibujos, esquemas, colores y tipografías que refuercen el mensaje.</p>
+</li>
+</ul>
+<p><strong>Consejos prácticos</strong></p>
+<ul>
+<li>Utiliza herramientas como <strong>PowerPoint</strong>, <strong>Canva</strong> o <strong>Microsoft Designer</strong> (OneDrive).</li>
+<li>No pongas solo texto: piensa en cómo resumir bien visualmente la información.</li>
+<li>Revisa la ortografía, la claridad y la presentación final antes de entregar.</li>
+</ul>
+<p><strong>Formato y entrega</strong></p>
+<ul>
+<li><strong>Formato:</strong> 1 infografía o esquema visual en PDF (una sola página o diapositiva).</li>
+<li><strong>Entrega:</strong> Subid vuestro archivo PDF a <strong>Aules</strong> en el apartado correspondiente.</li>
+</ul>
+</div> <!-- fin ejercicio -->
+<div style="page-break-after:always;"></div>
+<div class="ejercicio">
+<h3 id="white_check_mark-mapa-de-stakeholders-quién-influye-en-tu-empresa-tic">✅ Mapa de stakeholders: ¿quién influye en tu empresa TIC? </h3>
+<p><strong>Objetivo:</strong><br>
+Identificar los grupos de interés (stakeholders) de una empresa tecnológica y analizar sus expectativas en sostenibilidad.<br>
+<strong>Tarea:</strong><br>
+Diseña un <strong>mapa visual de stakeholders</strong> de una <em>empresa TIC ficticia</em>. Puedes imaginar una empresa de software, una plataforma digital, una app, etc.</p>
+<p>El objetivo es representar gráficamente quiénes influyen en tu empresa, cómo se relacionan con ella y qué podrían esperar en términos de sostenibilidad.</p>
+<p><strong>¿Qué debe incluir tu trabajo?</strong></p>
+<ul>
+<li>
+<p><strong>Nombre y tipo de empresa TIC (ficticia).</strong><br>
+Breve descripción de la empresa y su actividad principal.</p>
+</li>
+<li>
+<p><strong>Identificación de al menos 6 grupos de interés.</strong><br>
+Ejemplos: clientes, empleados, inversores, administraciones públicas, proveedores, ONGs…</p>
+</li>
+<li>
+<p><strong>Clasificación según su nivel de influencia e interés.</strong><br>
+Organiza los stakeholders en un mapa (ej. cuadrante o gráfico) con ejes "Influencia" e "Interés".</p>
+</li>
+<li>
+<p><strong>Tres frases tipo que podría decir cada stakeholder sobre sostenibilidad.</strong><br>
+Ejemplo:<br>
+<em>“Espero que esta empresa use energías renovables en sus servidores.”</em><br>
+<em>“Queremos transparencia en cómo gestionan nuestros datos.”</em></p>
+</li>
+<li>
+<p><strong>Elementos visuales:</strong><br>
+Presentación clara, con iconos, líneas de relación, colores, logos u otros elementos que faciliten la comprensión.<br>
+<strong>Ejemplo</strong></p>
+</li>
+</ul>
+<p><strong>Consejos prácticos</strong></p>
+<ul>
+<li>
+<p>Utilizad herramientas como <strong>PowerPoint</strong>, <strong>Canva</strong> o cualquier otro editor visual que permita crear esquemas.</p>
+</li>
+<li>
+<p>No pongáis solo listas: construid un <strong>mapa visual</strong> claro y atractivo.</p>
+</li>
+<li>
+<p>Pensad desde el punto de vista de cada stakeholder: ¿qué le importa más?, ¿qué impacto tiene sobre la empresa?, ¿qué puede exigir?<br>
+<strong>Formato y entrega</strong></p>
+</li>
+<li>
+<p><strong>Formato:</strong> 1 esquema visual o mapa de stakeholders en PDF.</p>
+</li>
+<li>
+<p><strong>Entrega:</strong> Subid el archivo a <strong>Aules</strong> en el apartado correspondiente.</p>
+</li>
+</ul>
+</div> <!-- fin ejercicio -->
+<div style="page-break-after:always;"></div>
+<div class="ejercicio">
+<h3 id="white_check_mark-informe-de-sostenibilidad">✅ Informe de sostenibilidad </h3>
+<p><strong>Objetivo:</strong><br>
+Desarrollar la capacidad de análisis y pensamiento crítico a partir de documentación real sobre sostenibilidad en el ámbito tecnológico.</p>
+<p><strong>Tarea:</strong><br>
+Elige un <strong>informe de sostenibilidad real</strong> de una empresa tecnológica (por ejemplo, Telefónica, Indra, Microsoft, etc.). <strong>Elige uno de los tres enfoques posibles (ambiental, social o de gobernanza)</strong> y analiza cómo lo abordan en el informe.</p>
+<p>Tu análisis debe ser breve pero reflexivo, e incluir elementos personales que demuestren que has comprendido el contenido.</p>
+<p><strong>¿Qué debe incluir tu trabajo?</strong></p>
+<ul>
+<li>
+<p><strong>Resumen personal del aspecto analizado (máx. 150 palabras).</strong><br>
+Explica con tus palabras qué acciones está realizando la empresa en sostenibilidad (por ejemplo: uso de energías renovables, políticas de igualdad, transparencia en datos...).</p>
+</li>
+<li>
+<p><strong>Una cita textual del informe, comentada.</strong><br>
+Elige una frase o párrafo literal que te haya parecido interesante o llamativo, y añade tu interpretación o reflexión.<br>
+Ejemplo: <em>“La empresa ha reducido un 25% su consumo energético desde 2019.” → Me parece relevante porque demuestra un compromiso real y medible.</em></p>
+</li>
+<li>
+<p><strong>Una pregunta crítica.</strong><br>
+Formula una duda o cuestión que te haya surgido al leer el informe.<br>
+Ejemplo: <em>¿Cómo verifican que sus proveedores también cumplen criterios ASG?</em></p>
+</li>
+</ul>
+<p><strong>Consejos prácticos</strong></p>
+<ul>
+<li>Puedes encontrar los informes en las páginas web oficiales de cada empresa, en la sección de <em>Sostenibilidad</em>, <em>ESG</em> o <em>Responsabilidad Corporativa</em>.
+<ul>
+<li>
+<p>Telefónica: <a href="https://www.telefonica.com/es/accionistas-inversores/informacion-financiera/informe-anual-integrado-de-gestion/">Informe de Gestión y Sostenibilidad 2024</a></p>
+</li>
+<li>
+<p>Indra: <a href="https://www.indracompany.com/sites/default/files/informe_sostenibilidad_es_2023_270224.pdf">Informe de Sostenibilidad 2023 (PDF)</a></p>
+</li>
+<li>
+<p>Microsoft: <a href="https://news.microsoft.com/es-xl/nuestro-informe-de-sostenibilidad-ambiental-2024/">Informe de Sostenibilidad Ambiental 2024</a></p>
+</li>
+<li>
+<p>IBM: <a href="https://www.ibm.com/es-es/impact/2023-ibm-impact-report">IBM Impact Report 2023</a></p>
+</li>
+<li>
+<p>Google: <a href="https://sustainability.google/intl/es_es/reports/google-2023-environmental-report/">Informe de Impacto Ambiental 2023</a></p>
+</li>
+<li>
+<p>Apple: <a href="https://www.apple.com/mx/environment/pdf/Apple_Environmental_Progress_Report_2024.pdf">Apple Environmental Progress Report 2024 (PDF)</a></p>
+</li>
+<li>
+<p>Cualquier otra empresa tecnológica</p>
+</li>
+</ul>
+</li>
+<li>Lee por encima primero y luego céntrate en una parte concreta que te interese (no es necesario leer todo el informe).</li>
+<li>No copies ni resumas literalmente: el objetivo es que desarrolles una <strong>opinión personal razonada</strong>.</li>
+</ul>
+<p><strong>Formato y entrega</strong></p>
+<ul>
+<li><strong>Formato:</strong> Documento breve en PDF (máx. 1 página).</li>
+<li><strong>Entrega:</strong> Sube tu trabajo en <strong>Aules</strong> en el apartado correspondiente.</li>
+</ul>
+</div> <!-- fin ejercicio -->
+<div style="page-break-after:always;"></div>
+<div class="ejercicio">
+<h3 id="white_check_mark-sostenibilidad-en-una-empresa-tecnológica">✅ Sostenibilidad en una empresa tecnológica </h3>
+<p><strong>Objetivo:</strong><br>
+Investigar cómo una empresa del sector TIC aplica los principios de sostenibilidad, y valorar su compromiso desde los criterios ASG (Ambientales, Sociales y de Gobernanza).</p>
+<p><strong>Tarea:</strong><br>
+En grupos de 2 o 3 personas, escoged una <strong>empresa tecnológica real</strong> que aparezca en algún <strong>índice de sostenibilidad</strong> como:</p>
+<ul>
+<li><a href="https://www.ftserussell.com/products/indices/ftse4good">FTSE4Good</a></li>
+<li><a href="https://www.bolsasymercados.es/esp/Estudios-Publicaciones/IBEX-ESG">IBEX ESG</a></li>
+<li><a href="https://www.msci.com/our-solutions/esg-investing/esg-indexes">MSCI Europe ESG Leaders</a></li>
+</ul>
+<p>Investigad su estrategia de sostenibilidad y preparad una <strong>presentación oral breve</strong> (de 5 a 7 minutos) para compartirla con el resto de la clase.</p>
+<p><strong>¿Qué debe incluir vuestro trabajo?</strong></p>
+<ul>
+<li>
+<p><em>Nombre y sector de la empresa.</em><br>
+¿Qué tipo de productos o servicios ofrece? ¿Dónde opera?</p>
+</li>
+<li>
+<p><em>Principales acciones sostenibles que desarrolla.</em><br>
+¿Qué hace en los ámbitos ambiental, social y de gobernanza?<br>
+Buscad ejemplos en su web, informes ESG o noticias oficiales.</p>
+</li>
+<li>
+<p><em>Aspectos destacables (positivos o negativos).</em><br>
+¿Qué hace especialmente bien? ¿En qué podría mejorar?</p>
+</li>
+<li>
+<p><em>Propuesta de mejora propia.</em><br>
+Imaginad que sois su equipo de sostenibilidad: ¿qué le propondríais para mejorar aún más su impacto positivo?</p>
+</li>
+<li>
+<p><em>Diapositivas o elementos visuales.</em><br>
+Incluid imágenes, frases clave, iconos, logos de los ODS… Evitad bloques largos de texto.</p>
+</li>
+</ul>
+<p><strong>Consejos prácticos</strong></p>
+<ul>
+<li>Repartíos bien el trabajo dentro del grupo (investigación, redacción, diseño, exposición...).</li>
+<li>Podéis usar herramientas como <strong>PowerPoint</strong>, <strong>Canva</strong> o <strong>Microsoft Designer</strong> (OneDrive).</li>
+<li>Evitad copiar texto literal: resumid con vuestras palabras y seleccionad lo más relevante.</li>
+<li>Practicad la exposición antes del día de clase: dividid el tiempo y aseguraos de que todos participáis.</li>
+<li>La clave no es repetir lo que hace la empresa, sino <strong>analizarlo y reflexionar</strong> sobre ello.</li>
+</ul>
+<p><strong>Formato y entrega</strong></p>
+<ul>
+<li><strong>Formato:</strong> Presentación oral de 5–7 minutos con soporte visual.</li>
+<li><strong>Entrega:</strong> Subid las diapositivas en PDF a <strong>Aules</strong> antes de la exposición.</li>
+</ul>
+</div> <!-- fin ejercicio -->
+<div style="page-break-after:always;"></div>
+<div class="ejercicio">
+<h3 id="white_check_mark-tu-empresa-tic-responsable">✅ Tu empresa TIC responsable </h3>
+<p><strong>Objetivo:</strong><br>
+Simular la creación de una empresa del sector tecnológico que integre los criterios ASG (Ambientales, Sociales y de Gobernanza) desde el inicio de su actividad.</p>
+<p><strong>Tarea:</strong><br>
+En equipos de 2 o 3 personas, imaginad que fundáis una <strong>empresa TIC ficticia</strong> y elaborad un <strong>informe ASG creativo</strong>, que refleje vuestro compromiso con la sostenibilidad.</p>
+<p>Presentad vuestro proyecto en un documento bien estructurado y visualmente atractivo.</p>
+<p><strong>¿Qué debe incluir vuestro informe?</strong></p>
+<ul>
+<li>
+<p><strong>Nombre, logotipo y descripción de la empresa.</strong><br>
+¿A qué se dedica? ¿Qué servicio o producto tecnológico ofrece? ¿Qué la hace diferente?</p>
+</li>
+<li>
+<p><strong>Valores corporativos.</strong><br>
+Definid de forma breve los principios que guiarán vuestras decisiones y acciones.<br>
+Ejemplo: <em>transparencia, innovación responsable, inclusión, impacto positivo…</em></p>
+</li>
+<li>
+<p><strong>Riesgos ASG más importantes.</strong><br>
+¿Qué posibles impactos negativos podría generar vuestra empresa si no gestiona bien los aspectos ambientales, sociales o de gobernanza?</p>
+</li>
+<li>
+<p><strong>Tres indicadores ASG que monitorizaríais.</strong><br>
+Indicadores concretos y medibles que reflejen vuestro compromiso.<br>
+Ejemplo: consumo eléctrico mensual, porcentaje de mujeres en el equipo, número de datos cifrados…</p>
+</li>
+<li>
+<p><strong>Acciones de mejora.</strong><br>
+¿Qué medidas tomaríais en el futuro para reforzar vuestra sostenibilidad?</p>
+</li>
+<li>
+<p><strong>Portada y diseño visual.</strong><br>
+El informe debe tener una portada con el nombre, logo y un diseño cuidado. Usad colores, iconos, diagramas o cualquier recurso visual que apoye el contenido.</p>
+</li>
+</ul>
+<p><strong>Consejos prácticos</strong></p>
+<ul>
+<li>Podéis crear el documento con herramientas como <strong>Word</strong>, <strong>PowerPoint</strong>, <strong>Canva</strong> o similares.</li>
+<li>Repartid las tareas entre los miembros del grupo (redacción, diseño, revisión…).</li>
+<li>Revisad que todo el contenido sea coherente y esté explicado con vuestras propias palabras.</li>
+<li>Cread una identidad corporativa sencilla pero profesional (nombre, logo, colores...).</li>
+</ul>
+<p><strong>Formato y entrega</strong></p>
+<ul>
+<li><strong>Formato:</strong> Informe visual en PDF (máx. 4 páginas).</li>
+<li><strong>Entrega:</strong> Subid vuestro archivo a <strong>Aules</strong> con el nombre del grupo.</li>
+</ul>
+</div> <!-- fin ejercicio -->
+<div style="page-break-after:always;"></div>
+<div class="ejercicio">
+<h3 id="white_check_mark-buenas-prácticas-sostenibles-en-el-mundo-real-too-good-to-go">✅ Buenas prácticas sostenibles en el mundo real: Too Good To Go </h3>
+<p><em>Objetivo:</em>*<br>
+Analizar cómo una solución tecnológica puede resolver un problema social y medioambiental, desarrollando pensamiento crítico sobre el papel de las TIC en la sostenibilidad.</p>
+<p><strong>Tarea:</strong><br>
+Investiga cómo funciona la aplicación <strong>Too Good To Go</strong> y reflexiona sobre los elementos que hacen de ella una <strong>buena práctica en sostenibilidad y responsabilidad social corporativa (RSC)</strong>.</p>
+<p>Después, responde a estas cuestiones en un documento breve (entre 200 y 300 palabras):</p>
+<ul>
+<li>¿Qué problema concreto resuelve Too Good To Go?</li>
+<li>¿Qué papel juega la tecnología en esta solución?</li>
+<li>¿Cómo se relaciona con los <strong>criterios ASG</strong> y los <strong>ODS</strong>? (cita al menos 2)</li>
+<li>¿Qué aspecto te parece más innovador o inspirador de esta iniciativa?</li>
+<li>Si adaptaras este modelo al <strong>sector tecnológico</strong> (software, datos, redes…), ¿qué problema podrías resolver tú?</li>
+</ul>
+<p><strong>¿Qué debe incluir tu trabajo?</strong></p>
+<ul>
+<li>Respuestas argumentadas con tus propias palabras.</li>
+<li>Un ejemplo similar del ámbito TIC (real o imaginado).</li>
+<li>Una frase final tipo eslogan que resuma tu visión.<br>
+Ejemplo: <em>"No solo diseñamos apps, también diseñamos impacto positivo."</em></li>
+</ul>
+<p><strong>Consejos prácticos</strong></p>
+<ul>
+<li>Puedes usar su <a href="https://toogoodtogo.com">web oficial</a> o buscar artículos en prensa digital.</li>
+<li>Céntrate en entender el modelo y pensar cómo trasladarlo al mundo del software, plataformas, IA, etc.</li>
+<li>Sé personal en tu análisis: se valora la opinión bien argumentada, no repetir información sin reflexionar.</li>
+</ul>
+<p><strong>Formato y entrega</strong></p>
+<ul>
+<li><strong>Formato:</strong> Documento PDF (1 página).</li>
+<li><strong>Entrega:</strong> A través de <strong>Aules</strong>.</li>
+</ul>
+</div> <!-- fin ejercicio -->
+<div style="page-break-after:always;"></div>
+<h2 id="ra-y-ce">RA y CE </h2>
+<p>Resultado de aprendizaje 1 (RA1). Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución.</p>
+<ul>
+<li>CEa. Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible.</li>
+<li>CEb. Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales.</li>
+<li>CEc. Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030.</li>
+<li>CEd. Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización.</li>
+<li>CEe. Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo.</li>
+<li>CEf. Se ha descrito la inversión socialmente responsable y el papel de los analistas, inversores, agencias e índices de sostenibilidad en el fomento de la sostenibilidad.</li>
+</ul>
+<h3 id="relación-con-los-criterios-de-evaluación">Relación con los criterios de evaluación </h3>
+<table>
+<thead>
+<tr>
+<th>Actividad</th>
+<th>CEa</th>
+<th>CEb</th>
+<th>CEc</th>
+<th>CEd</th>
+<th>CEe</th>
+<th>CEf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>¿Es sostenible la nube?</td>
+<td>✅</td>
+<td>✅</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>¿Cómo afectan los criterios ASG a las empresas tecnológicas?</td>
+<td></td>
+<td>✅</td>
+<td></td>
+<td>✅</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ODS en el sector productivo tecnológico</td>
+<td></td>
+<td></td>
+<td>✅</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>¿Cómo contribuirían los ODS si tú creas la empresa?</td>
+<td></td>
+<td>✅</td>
+<td>✅</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mapa de stakeholders: ¿quién influye en tu empresa TIC?</td>
+<td></td>
+<td>✅</td>
+<td></td>
+<td>✅</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Informe de sostenibilidad (lectura crítica de informe real)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td></td>
+</tr>
+<tr>
+<td>Sostenibilidad en una empresa tecnológica (caso real con presentación)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Tu empresa TIC responsable (mini-proyecto con informe ASG ficticio)</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Buenas prácticas sostenibles en el mundo real: Too Good To Go</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td></td>
+<td></td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
