@@ -1,0 +1,556 @@
+<!DOCTYPE html><html><head>
+      <title>Test Unidad 2</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      @import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css);
+code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/catamaran/v28/o-0bIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjd5a7dvg.ttf) format('truetype');
+}
+.markdown-preview.markdown-preview .box_bg_lightgrey {
+  background-color: #f5f5f5;
+  border: 2px solid #969696;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 0 rgba(78, 120, 158, 0.1);
+}
+.markdown-preview.markdown-preview .box_bg_lightgreen {
+  background-color: #f5faf5;
+  border: 2px solid #969b96;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 0 rgba(78, 120, 158, 0.1);
+}
+.markdown-preview.markdown-preview .contenedor {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 30px auto;
+}
+.markdown-preview.markdown-preview .fondo {
+  background: url(https://balmisdigigs.github.io/digitalizacion.github.io/imagenes/fondos/quote.png);
+  background-size: cover;
+  width: 75%;
+  height: 160px;
+  border-radius: 10px;
+  position: relative;
+}
+.markdown-preview.markdown-preview .cita {
+  font-family: Arial;
+  font-style: italic;
+  font-weight: 600;
+  text-align: justify;
+  line-height: 1.5rem;
+  opacity: 0.6;
+  color: white;
+  padding: 5rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-size: 1.3rem;
+  transform: translate(-50%, -50%);
+}
+.markdown-preview.markdown-preview .abre_comilla {
+  font-family: "Catamaran";
+  font-weight: 600;
+  color: white;
+  padding-left: 30px;
+  position: absolute;
+  font-size: 6rem;
+  transform: translate(0%, -15%);
+}
+.markdown-preview.markdown-preview .cierra_comilla {
+  font-family: "Catamaran";
+  font-weight: 600;
+  color: white;
+  padding-right: 30px;
+  right: 0%;
+  position: absolute;
+  font-size: 6rem;
+  transform: translate(0%, 55%);
+}
+.markdown-preview.markdown-preview .autor {
+  font-family: Arial;
+  color: white;
+  margin: 0px;
+  padding-left: 30px;
+  position: absolute;
+  top: 83%;
+  font-size: 1rem;
+}
+.markdown-preview.markdown-preview .flotante {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .flotante {
+    justify-content: center;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .flotante {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .flotante {
+    flex-direction: column;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .flotante {
+    flex-direction: row;
+  }
+}
+.markdown-preview.markdown-preview .flotante_izq {
+  margin-right: 15px;
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .flotante_izq {
+    width: 100%;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .flotante_izq {
+    width: auto;
+  }
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .flotante_der {
+    width: 100%;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .flotante_der {
+    width: auto;
+  }
+}
+.markdown-preview.markdown-preview .galeria_imagenes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 550px) {
+  .markdown-preview.markdown-preview .galeria_imagenes {
+    flex-direction: column;
+  }
+}
+@media (min-width: 550px) {
+  .markdown-preview.markdown-preview .galeria_imagenes {
+    flex-direction: row;
+  }
+}
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+    const configureMermaidIconPacks = () => {
+        window["mermaid"].registerIconPacks([
+            {
+                name: "logos",
+                loader: () =>
+                    fetch("https://unpkg.com/@iconify-json/logos@1/icons.json").then(
+                        (res) => res.json()
+                    ),
+            },
+        ]);
+    };
+
+    if (document.readyState !== 'loading') {
+        configureMermaidIconPacks();
+    } else {
+        document.addEventListener("DOMContentLoaded", () => {
+            configureMermaidIconPacks();
+        });
+    }
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<ol>
+<li>
+<p>¿Cuántos Objetivos de Desarrollo Sostenible (ODS) establece la Agenda 2030 para el Desarrollo Sostenible de la ONU?<br>
+A) 169<br>
+B) 100<br>
+C) ✅ 17<br>
+D) 7</p>
+</li>
+<li>
+<p>¿Cuál es la principal autoridad ambiental a nivel mundial cuya misión es mejorar la calidad de vida sin comprometer la de futuras generaciones?<br>
+A) El Instituto Nacional de Estadística (INE)<br>
+B) ✅ El Programa de las Naciones Unidas para el Medio Ambiente (PNUMA)<br>
+C) La Unión Europea (UE)<br>
+D) El Fondo Monetario Internacional (FMI)</p>
+</li>
+<li>
+<p>El Programa de las Naciones Unidas para el Medio Ambiente (PNUMA) identifica tres grandes crisis ambientales interconectadas. ¿Cuál de las siguientes opciones las incluye?<br>
+A) La superpoblación, la pobreza y la guerra<br>
+B) La desertificación, el hambre y la corrupción<br>
+C) ✅ El cambio climático, la pérdida de biodiversidad y la contaminación<br>
+D) La globalización, la desigualdad y el envejecimiento de la población</p>
+</li>
+<li>
+<p>Según el documento, ¿cuál es la principal causa del cambio climático desde el siglo XIX?<br>
+A) Erupciones volcánicas<br>
+B) Variaciones solares<br>
+C) ✅ La actividad humana, sobre todo por la quema de combustibles fósiles<br>
+D) El aumento de los glaciares</p>
+</li>
+<li>
+<p>El Acuerdo de París de 2015 estableció el objetivo de limitar el calentamiento de la Tierra a:<br>
+A) Menos de 5°C<br>
+B) ✅ Menos de 2°C, con esfuerzos para no superar los 1,5°C<br>
+C) Exactamente 1,5°C<br>
+D) Más de 3°C</p>
+</li>
+<li>
+<p>¿Qué propone el modelo de <strong>economía circular</strong> como alternativa al modelo lineal (extraer, fabricar, usar y tirar)?<br>
+A) Que los productos se diseñen para un solo uso<br>
+B) ✅ Que los productos se diseñen para ser reutilizados, reparados y reciclados<br>
+C) La quema de residuos como principal forma de gestión<br>
+D) El uso de vertederos controlados</p>
+</li>
+<li>
+<p>La transición energética implica el cambio desde fuentes de energía convencionales hacia fuentes más limpias. ¿Cuál de las siguientes no se considera una fuente de energía renovable en el documento?<br>
+A) Solar<br>
+B) Eólica<br>
+C) Geotérmica<br>
+D) ✅ Combustibles fósiles</p>
+</li>
+<li>
+<p>¿Qué busca el <strong>modelo alimentario sostenible</strong>?<br>
+A) Producir la mayor cantidad de alimentos sin importar el impacto ambiental<br>
+B) Un modelo que priorice la distribución sobre la producción<br>
+C) ✅ Prácticas de producción, distribución y consumo que sean ambientalmente sostenibles, socialmente justas y económicamente viables<br>
+D) La producción de alimentos únicamente en granjas industriales</p>
+</li>
+<li>
+<p>La pérdida de biodiversidad afecta la capacidad de los ecosistemas para proporcionar servicios esenciales como:<br>
+A) El desarrollo urbano<br>
+B) La producción industrial<br>
+C) ✅ La purificación del agua y la polinización<br>
+D) La reducción de la pobreza</p>
+</li>
+<li>
+<p>¿Cuál de los siguientes es un reto social causado por el aumento de la proporción de personas mayores en la sociedad?<br>
+A) ✅ El envejecimiento de la población<br>
+B) Los conflictos armados<br>
+C) La pobreza y desigualdad económica<br>
+D) La discriminación</p>
+</li>
+<li>
+<p>El abuso de poder para obtener beneficios personales o privados se conoce como:<br>
+A) Discriminación<br>
+B) Desplazamiento forzado<br>
+C) Pobreza<br>
+D) ✅ Corrupción y falta de transparencia</p>
+</li>
+<li>
+<p>¿Qué impacto ambiental clave se asocia con el sector ganadero, según el documento?<br>
+A) La generación de residuos tóxicos<br>
+B) ✅ La emisión de gases de efecto invernadero (metano) y la deforestación para pastos<br>
+C) La contaminación acústica<br>
+D) El consumo excesivo de agua y energía en la construcción</p>
+</li>
+<li>
+<p>Para el sector agrícola, ¿qué medida se propone como principio sostenible para gestionar el suelo y el agua?<br>
+A) El uso excesivo de pesticidas y fertilizantes químicos<br>
+B) La deforestación masiva<br>
+C) ✅ El uso de abonos orgánicos y el control biológico de plagas<br>
+D) La eliminación de la rotación de cultivos</p>
+</li>
+<li>
+<p>Los impactos ambientales tienen efectos en cascada. ¿Qué puede causar la <strong>gestión inadecuada de residuos</strong>?<br>
+A) Olas de calor y sequías<br>
+B) ✅ La contaminación del suelo, el agua y el aire, afectando la vida silvestre y la salud humana<br>
+C) El aumento de la biodiversidad<br>
+D) La disminución de la congestión del tráfico</p>
+</li>
+<li>
+<p>¿Qué efecto social se produce cuando el reparto de los recursos es desigual y se limitan las oportunidades de acceso a la educación, la salud o la alimentación?<br>
+A) La discriminación<br>
+B) La corrupción<br>
+C) El envejecimiento de la población<br>
+D) ✅ La pobreza y desigualdad económica</p>
+</li>
+<li>
+<p>La ONU ha señalado la necesidad de que las alianzas para los ODS se centren en tres pasos clave. ¿Cuál de los siguientes no es uno de ellos?<br>
+A) ✅ Reducir la financiación para los ODS<br>
+B) Preparar la gobernanza y las instituciones<br>
+C) Priorizar políticas e inversiones justas<br>
+D) Aumentar la financiación para los ODS</p>
+</li>
+<li>
+<p>¿Qué ODS se centra en fortalecer la cooperación entre gobiernos, sector privado y sociedad civil?<br>
+A) ODS 1<br>
+B) ODS 13<br>
+C) ODS 5<br>
+D) ✅ ODS 17</p>
+</li>
+<li>
+<p>El <strong>Fondo de Transición Justa de la UE</strong> tiene como objetivo principal:<br>
+A) Financiar la construcción de nuevas infraestructuras en zonas rurales<br>
+B) ✅ Apoyar a las regiones más afectadas por la transición hacia la neutralidad climática<br>
+C) Proteger los derechos humanos en conflictos armados<br>
+D) Fomentar el turismo de masas</p>
+</li>
+<li>
+<p>Una de las medidas propuestas para abordar la <strong>corrupción</strong> es:<br>
+A) Reducir la cooperación internacional<br>
+B) ✅ Establecer leyes sólidas, fomentar la cooperación internacional y proteger a quienes denuncian<br>
+C) Disminuir la transparencia en las instituciones<br>
+D) Centralizar el poder en una sola entidad</p>
+</li>
+<li>
+<p>¿Qué se define como la introducción de sustancias o agentes físicos en el medio ambiente que causan efectos perjudiciales en los seres vivos y los ecosistemas?<br>
+A) Cambio climático<br>
+B) Economía circular<br>
+C) ✅ Contaminación<br>
+D) Transición energética</p>
+</li>
+<li>
+<p>El documento menciona que el total de desafíos o metas definidos para la Agenda 2030 es de:<br>
+A) 17<br>
+B) ✅ 169<br>
+C) 3<br>
+D) 13</p>
+</li>
+<li>
+<p>La principal misión del PNUMA es inspirar y capacitar a las naciones para:<br>
+A) Aumentar la producción de combustibles fósiles<br>
+B) Combatir la desigualdad económica<br>
+C) ✅ Mejorar su calidad de vida sin comprometer la de futuras generaciones<br>
+D) Promover la tecnología</p>
+</li>
+<li>
+<p>¿Qué concepto se refiere al promedio de las condiciones del tiempo en una región durante un periodo largo (30 años o más)?<br>
+A) Tiempo<br>
+B) Meteorología<br>
+C) ✅ Clima<br>
+D) Atmósfera</p>
+</li>
+<li>
+<p>La introducción de <strong>dióxido de carbono (CO₂)</strong>, metano (CH₄) y óxido nitroso (N₂O) en la atmósfera es una de las principales causas del:<br>
+A) Envejecimiento de la población<br>
+B) ✅ Cambio climático<br>
+C) Pérdida de recursos hídricos<br>
+D) Modelo económico lineal</p>
+</li>
+<li>
+<p>En el modelo económico lineal, gran parte de los residuos terminan en:<br>
+A) ✅ Vertederos o incineradoras<br>
+B) Sistemas de reciclaje<br>
+C) Compostaje<br>
+D) Tecnologías limpias</p>
+</li>
+<li>
+<p>¿Qué sector productivo tiene como impacto ambiental clave la deforestación y la contaminación del agua y el suelo por el uso de pesticidas?<br>
+A) Industrial<br>
+B) Ganadero<br>
+C) ✅ Agrícola<br>
+D) Transporte</p>
+</li>
+<li>
+<p>La construcción masiva de infraestructuras y el consumo excesivo de agua y energía son impactos ambientales clave del sector:<br>
+A) Agrícola<br>
+B) Ganadero<br>
+C) ✅ Turístico<br>
+D) Industrial</p>
+</li>
+<li>
+<p>¿Qué reto social puede ser causado por factores estructurales, culturales, tecnológicos y demográficos?<br>
+A) ✅ La pobreza y desigualdad económica<br>
+B) El cambio climático<br>
+C) La pérdida de biodiversidad<br>
+D) La contaminación</p>
+</li>
+<li>
+<p>¿Qué efecto social genera daño psicológico y emocional, y limita oportunidades laborales y educativas?<br>
+A) El envejecimiento de la población<br>
+B) La pobreza<br>
+C) ✅ La discriminación<br>
+D) La corrupción</p>
+</li>
+<li>
+<p>¿Qué sector productivo tiene como principios sostenibles la implementación de tecnologías limpias y la gestión de residuos para su reintegración?<br>
+A) Agrícola<br>
+B) Ganadero<br>
+C) Transporte<br>
+D) ✅ Industrial</p>
+</li>
+<li>
+<p>¿Qué es la <strong>contaminación</strong>, según la definición del documento?<br>
+A) La degradación de los ecosistemas<br>
+B) El cambio en las temperaturas<br>
+C) ✅ La introducción de sustancias o agentes físicos en el medio ambiente que causan efectos perjudiciales en los seres vivos y los ecosistemas<br>
+D) El uso excesivo de recursos hídricos</p>
+</li>
+<li>
+<p>¿Qué provoca la <strong>pérdida de recursos hídricos</strong>?<br>
+A) El aumento de la biodiversidad<br>
+B) ✅ La escasez de agua, afectando la salud y la agricultura, y aumentando el riesgo de incendios<br>
+C) La disminución de las olas de calor<br>
+D) La mejora de los ecosistemas acuáticos</p>
+</li>
+<li>
+<p>¿Qué reto social provoca la disminución de la fuerza laboral activa y genera desafíos en los sistemas de pensiones?<br>
+A) Discriminación<br>
+B) Pobreza<br>
+C) Conflictos armados<br>
+D) ✅ Envejecimiento de la población</p>
+</li>
+<li>
+<p>¿Qué ODS se menciona específicamente en el texto como el que promueve las alianzas para lograr los objetivos?<br>
+A) ODS 1<br>
+B) ODS 5<br>
+C) ODS 13<br>
+D) ✅ ODS 17</p>
+</li>
+<li>
+<p>La <strong>Ayuda Oficial al Desarrollo (AOD)</strong> es un flujo financiero de países desarrollados para apoyar a:<br>
+A) El sector privado<br>
+B) ✅ Países en desarrollo<br>
+C) Organizaciones no gubernamentales<br>
+D) Instituciones académicas</p>
+</li>
+<li>
+<p>La ONU acordó en 1972 destinar un porcentaje del Producto Nacional Bruto (PNB) a la Ayuda Oficial al Desarrollo. ¿Qué porcentaje fue?<br>
+A) 0,07%<br>
+B) 0,7%<br>
+C) 7%<br>
+D) 70%</p>
+</li>
+<li>
+<p>¿Qué medida se propone para abordar los <strong>conflictos y desplazamientos</strong>?<br>
+A) Aumentar la violencia<br>
+B) ✅ Invertir en desarrollo económico en áreas vulnerables y proteger los derechos humanos<br>
+C) Reducir la cooperación internacional<br>
+D) Disminuir los sistemas de protección social</p>
+</li>
+<li>
+<p>La protección de especies en peligro, la preservación de hábitats naturales y la regulación de actividades como la deforestación son medidas para la:<br>
+A) Lucha contra el cambio climático<br>
+B) Reducción de la contaminación<br>
+C) ✅ Conservación de la biodiversidad<br>
+D) Eliminación de residuos</p>
+</li>
+<li>
+<p>¿Qué riesgo para la sociedad aumenta la acumulación de plásticos y otros residuos?<br>
+A) ✅ Contaminación del suelo, el agua y el aire<br>
+B) Aumento de la biodiversidad<br>
+C) Reducción del cambio climático<br>
+D) Mejora de la salud humana</p>
+</li>
+<li>
+<p>¿Qué sector productivo tiene como impactos ambientales las emisiones de GEI y la contaminación del aire?<br>
+A) Agrícola<br>
+B) Ganadero<br>
+C) ✅ Transporte<br>
+D) Turístico</p>
+</li>
+<li>
+<p>El <strong>desarrollo urbano y la movilidad sostenible</strong> tienen como objetivo:<br>
+A) Aumentar la congestión del tráfico<br>
+B) ✅ Reducir los impactos negativos de la planificación urbana, como la contaminación y la pérdida de áreas verdes<br>
+C) Fomentar la dependencia del coche privado<br>
+D) Aumentar el consumo de combustibles fósiles</p>
+</li>
+<li>
+<p>Las "migraciones climáticas" son un desencadenante de qué reto social:<br>
+A) Pobreza y desigualdad económica<br>
+B) Discriminación<br>
+C) Envejecimiento de la población<br>
+D) ✅ Conflictos armados y desplazamientos forzados</p>
+</li>
+<li>
+<p>Una de las medidas propuestas para abordar la <strong>discriminación</strong> es:<br>
+A) Limitar los espacios seguros<br>
+B) ✅ Educar en diversidad y derechos humanos<br>
+C) Fomentar la desigualdad de oportunidades<br>
+D) Limitar el acceso a la educación</p>
+</li>
+<li>
+<p>¿Qué tipo de contaminación se menciona en el texto además de la del aire, el suelo y el agua?<br>
+A) Contaminación sonora y térmica<br>
+B) Contaminación electrónica y biológica<br>
+C) ✅ Contaminación acústica y lumínica<br>
+D) Contaminación electromagnética y química</p>
+</li>
+<li>
+<p>¿Cuál es el objetivo del <strong>ODS 1</strong>?<br>
+A) Producción y consumo responsables<br>
+B) Acción por el clima<br>
+C) ✅ Fin de la pobreza<br>
+D) Paz, justicia e instituciones sólidas</p>
+</li>
+<li>
+<p>¿Qué ODS se centra en las alianzas para lograr los objetivos?<br>
+A) ODS 1<br>
+B) ODS 13<br>
+C) ODS 5<br>
+D) ✅ ODS 17</p>
+</li>
+<li>
+<p>Uno de los efectos del cambio climático es la generación de fenómenos extremos como:<br>
+A) ✅ Sequías, inundaciones y olas de calor<br>
+B) El aumento de la calidad del aire<br>
+C) La reducción de la contaminación<br>
+D) La mejora de la biodiversidad</p>
+</li>
+<li>
+<p>¿Qué reto social genera una pérdida de confianza pública en las instituciones y desvía recursos públicos?<br>
+A) Discriminación<br>
+B) Envejecimiento de la población<br>
+C) ✅ Corrupción<br>
+D) Conflictos armados</p>
+</li>
+<li>
+<p>La <strong>protección de los recursos hídricos</strong> es esencial para:<br>
+A) La ganadería intensiva<br>
+B) ✅ Garantizar el acceso a agua limpia y segura, así como la sostenibilidad de los ecosistemas acuáticos<br>
+C) La reducción de los incendios forestales<br>
+D) El desarrollo urbano no planificado</p>
+</li>
+<li>
+<p>¿Qué medida se propone para abordar la <strong>pobreza y desigualdad</strong>?<br>
+A) Reducir el acceso a la educación<br>
+B) ✅ Implementar políticas de salarios justos y sistemas de protección social<br>
+C) Fomentar la discriminación<br>
+D) Limitar la participación en la sociedad</p>
+</li>
+</ol>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
